@@ -240,9 +240,15 @@ address {
     width: 264px;
     height: 112px;
     background: #f4f4fd;
+    margin-bottom: 8px;
 }
 
-.benefits-icon-item {}
+.benefits-icon-item {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
 
 .benefits-title {
     font-weight: 500;
@@ -365,6 +371,27 @@ address {
     background-color: #FFFFFF;
 }
 
+.social-list {
+    display: flex;
+    gap: 24px;
+    margin-top: 15px;
+}
+
+.social-logo {
+    margin: 12px;
+}
+
+.social-logo-div {
+    width: 40px;
+    height: 40px;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+}
+
+.social-list-item.first {
+    margin-left: 16px;
+}
+
 
 /*============== /TEAM SECTION ==============*/
 
@@ -386,8 +413,6 @@ address {
 .list-title {
     margin-bottom: 8px;
 }
-
-.list-description {}
 
 .portfolio-description {
     border-bottom: 1px solid #e7e9fc;
@@ -418,6 +443,33 @@ address {
 
 .list-description {
     letter-spacing: 0.02em;
+}
+
+.overlay-text {
+    margin-top: 40px;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.box {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    background-color: #4d5ae5;
+    color: #f4f4fd;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms ease-in-out;
+}
+
+.box:hover .overlay {
+    transform: translateY(0);
 }
 
 
@@ -453,6 +505,41 @@ address {
 .footer-logo {
     display: inline-block;
     margin-bottom: 16px;
+}
+
+.social-list-footer {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-container {
+    display: flex;
+    gap: 24px;
+}
+
+.social-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+    padding-bottom: 16px;
+}
+
+.social-footer {
+    margin-left: 120px;
+}
+
+.social-logo-div-footer {
+    width: 40px;
+    height: 40px;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-logo-div-footer:hover {
+    background-color: #31d0aa;
 }
 
 
